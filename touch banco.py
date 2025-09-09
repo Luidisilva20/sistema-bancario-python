@@ -33,11 +33,11 @@ while True:
         valor = float(input("Informe o valor do saque: R$ "))
 
         if valor > saldo:
-            print("❌ Saldo insuficiente.")
+            print("Saldo insuficiente.")
         elif valor > limite:
-            print("❌ Valor acima do limite por saque (R$500).")
+            print("Valor acima do limite por saque (R$500).")
         elif numero_saques >= LIMITE_SAQUES:
-            print("❌ Limite diário de saques atingido (3 saques).")
+            print("Limite diário de saques atingido (3 saques).")
         elif valor > 0:
             saldo -= valor
             extrato += f"Saque:    R$ {valor:.2f}\n"
